@@ -14,7 +14,6 @@ public class Negatron {
 
         // Create an instance using newInstance() and pass into the brain.
         NegatronAdaptor adaptor = (NegatronAdaptor) Class.forName(implClass).newInstance();
-        NegatronBrain brain = new NegatronBrain(adaptor);
 
         // Call init() on it.
         adaptor.init();
